@@ -29,6 +29,16 @@ const favoritesSectionData = {
     title: 'People I learn from',
     data: [
       {
+        image: import('@/assets/favorites/people/alan.jpg'),
+        name: 'Alan Buscaglia',
+        url: '',
+      },
+      {
+        image: import('@/assets/favorites/people/miguel.jpg'),
+        name: 'Miguel Angel Duran',
+        url: '',
+      },
+      {
         image: import('@/assets/favorites/people/person-1.jpg'),
         name: 'Kent C. Dodds',
         url: 'https://kentcdodds.com/',
@@ -43,24 +53,8 @@ const favoritesSectionData = {
         name: 'Eric Evans',
         url: 'https://www.domainlanguage.com/',
       },
-      {
-        image: import('@/assets/favorites/people/person-4.jpeg'),
-        name: 'Martin Fowler',
-        url: 'https://martinfowler.com/',
-      },
-      {
-        image: import('@/assets/favorites/people/person-5.jpg'),
-        name: 'Robert C. Martin',
-        url: 'http://cleancoder.com/',
-      },
-      {
-        image: import('@/assets/favorites/people/person-6.jpeg'),
-        name: 'Adam Dymitruk',
-        url: 'https://eventmodeling.org/',
-      },
     ],
   },
-  
 } as const satisfies ReadonlyDeep<FavoritesSection>;
 
 export default favoritesSectionData;
