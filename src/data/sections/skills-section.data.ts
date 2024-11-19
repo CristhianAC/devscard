@@ -2,19 +2,7 @@ import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import { kotlin, astro } from '../helpers/skills';
 import {
-  apolloGraphql,
-  astro,
-  cypress,
-  eslint,
-  firebase,
-  mongoDb,
-  nestJs,
-  pnpm,
-  postgreSql,
-  prettier,
-  react,
-  sass,
-  supabase,
+  postgreSql, react, supabase,
   tailwindCss,
   typescript,
   angular,
@@ -51,7 +39,7 @@ const skillsSectionData = {
         postgreSql({ level: 4 }),
         kotlin({ level: 3 }),
         astro({ level: 3 }),
-      
+
       ],
     },
     {
@@ -61,7 +49,7 @@ const skillsSectionData = {
     {
       title: 'I speak',
       skills: [
-  
+
         { icon: 'circle-flags:us', name: 'English - B2' },
         { icon: 'circle-flags:es-variant', name: 'Spanish - Native' },
       ],

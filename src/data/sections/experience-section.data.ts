@@ -1,18 +1,9 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
+import { instagram, linkedin, website } from '../helpers/links';
 import { angular, django, tailwindCss } from '../helpers/skills';
 import {
-  eslint,
-  firebase,
-  nextJs,
-  nx,
-  pnpm,
-  react,
-  reactQuery,
-  tailwindCss,
-  typescript,
-  vue,
+  eslint, nextJs, react, typescript
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -29,7 +20,7 @@ const experienceSectionData = {
       image: import('@/assets/logos/MockupLogo.jpg'),
       dates: [new Date('2024-02'), null],
       description: `
-        
+
       `,
       tagsList: {
         title: 'Technologies',
@@ -50,7 +41,7 @@ const experienceSectionData = {
       },
       links: [website({ url: '#' }), instagram({ url: '#' })],
     },
-    
+
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;
 

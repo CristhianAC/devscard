@@ -1,22 +1,8 @@
 import type { PortfolioSection } from '@/types/sections/portfolio-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { demo, github, mockups, website } from '../helpers/links';
+import { demo } from '../helpers/links';
 import { angular, astro, django, typescript } from '../helpers/skills';
-import {
-  eslint,
-  firebase,
-  jest,
-  nestJs,
-  nextJs,
-  nx,
-  pnpm,
-  postgreSql,
-  prettier,
-  react,
-  sass,
-  tailwindCss,
-  typescript,
-} from '../helpers/skills';
+import { eslint, prettier, tailwindCss } from '../helpers/skills';
 
 const portfolioSectionData = {
   config: {
@@ -32,7 +18,7 @@ const portfolioSectionData = {
   projects: [
     {
       name: 'npx-gaia-gis',
-      
+
       dates: [new Date('2024-11'), null],
       details: [
         { label: 'Team size', value: '1 person' },
@@ -40,7 +26,7 @@ const portfolioSectionData = {
         { label: 'Company', value: 'Olympus Analytics' },
         { label: 'Category', value: ['Web app', 'Open source'] },
       ],
-      
+
       description:
         'The Collision Visualization project is a web application designed to visualize collision data, raster images, and other geospatial information in Colombia. Users can view points representing collision locations, tree distributions, and city temperature data on an interactive map. The application provides advanced tools for data manipulation and visualization, enabling users to gain insights into spatial patterns and trends.',
       tagsList: {
@@ -51,11 +37,11 @@ const portfolioSectionData = {
     },
     {
       name: 'Student Management System',
-   
+
       dates: [new Date('2024-09'), null],
       details: [
         { label: 'Team size', value: '8 people' },
-        { label: 'My role', value: [ 'Designer'] },
+        { label: 'My role', value: ['Designer'] },
         { label: 'Company', value: 'Universidad del Norte' },
         { label: 'Category', value: ['Web app'] },
       ],
@@ -72,13 +58,13 @@ const portfolioSectionData = {
       dates: [new Date('2024-09'), new Date('2024-11')],
       details: [
         { label: 'Team size', value: '2 people' },
-        { label: 'My role', value: ['Software Architect','Front-end Developer', 'Designer'] },
+        { label: 'My role', value: ['Software Architect', 'Front-end Developer', 'Designer'] },
         { label: 'Company', value: 'Olympus Analytics' },
         { label: 'Category', value: ['Web app'] },
       ],
       description:
         'The Escala Visualization project is a web application designed to visualize collision data, raster images, and other geospatial information in Colombia. Users can view points representing collision locations, tree distributions, and city temperature data on an interactive map. The application provides advanced tools for data manipulation and visualization, enabling users to gain insights into spatial patterns and trends.',
-      tagsList: { 
+      tagsList: {
         title: 'Technologies',
         tags: [angular(), tailwindCss(), django(), typescript()],
       },
