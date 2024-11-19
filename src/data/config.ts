@@ -13,12 +13,11 @@ const config = {
   meta: {
     title: 'Cristhian Agamez - Senior Frontend Developer & Backend developer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales ac dui at vestibulum. In condimentum metus id dui tincidunt, in blandit mi vehicula.',
-    faviconPath: '/src/assets/my-image.jpeg',
+      'Senior Frontend Deveeloper & Backend Developer. I specialize in building websites and web applications with modern technologies like React, Angular, and Django.',
+    faviconPath: '/src/assets/YO.png',
   },
   pdf: {
-    footer:
-      '',
+    footer: '',
   },
 } as const satisfies ReadonlyDeep<Config>;
 
