@@ -1,9 +1,9 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
+import { kotlin, astro } from '../helpers/skills';
 import {
   apolloGraphql,
   astro,
-  chakraUi,
   cypress,
   eslint,
   firebase,
@@ -17,6 +17,8 @@ import {
   supabase,
   tailwindCss,
   typescript,
+  angular,
+  django
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -30,48 +32,38 @@ const skillsSectionData = {
     {
       title: 'I already know',
       skills: [
+        angular({level:5, description:'Expert in Angular, my favorite frontend framework, with deep knowledge of its component-based architecture, reactive programming with RxJS, and state management using NgRx. Experienced in building scalable, dynamic web applications while adhering to best practices and leveraging Angular powerful tools for maintainability and performance.'}),
         react({
-          level: 5,
+          level: 4,
           description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+            'Extensive knowledge in React, with expertise in building scalable and efficient user interfaces. Proficient in leveraging React core features, including hooks, context API, and lifecycle methods, to create dynamic and interactive applications. Skilled in state management using tools like Redux, and experienced in optimizing performance for seamless user experiences. Passionate about staying up-to-date with the latest React advancements and best practices.',
         }),
         typescript({
-          level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          level: 5,
+          description: 'Skilled in TypeScript, with expertise in its type system, generics, and integration with frameworks like React and Angular. Focused on writing clean, strongly-typed code to build scalable and maintainable applications.',
         }),
-        sass({
+        tailwindCss({ level: 5 }),
+        django({
           level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
-        }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
-        }),
-        nestJs({
-          level: 3,
           description:
             'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+        postgreSql({ level: 4 }),
+        kotlin({ level: 3 }),
+        astro({ level: 3 }),
+      
       ],
     },
     {
       title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      skills: [supabase()],
     },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+  
+        { icon: 'circle-flags:us', name: 'English - B2' },
+        { icon: 'circle-flags:es-variant', name: 'Spanish - Native' },
       ],
     },
   ],

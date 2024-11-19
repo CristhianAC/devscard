@@ -2,7 +2,6 @@ import type { PortfolioSection } from '@/types/sections/portfolio-section.types'
 import type { ReadonlyDeep } from 'type-fest';
 import { demo, github, mockups, website } from '../helpers/links';
 import {
-  chakraUi,
   eslint,
   firebase,
   jest,
@@ -97,7 +96,7 @@ const portfolioSectionData = {
         'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        tags: [react(), typescript(), nx(), pnpm()],
       },
       links: [website({ url: '#' }), github({ url: '#' })],
     },

@@ -31,14 +31,26 @@ export const astro = createSkillFactory({
   iconColor: '#FF5D01',
   url: 'https://astro.build/',
 });
-
-export const chakraUi = createSkillFactory({
-  name: 'Chakra UI',
-  icon: 'simple-icons:chakraui',
-  iconColor: '#319795',
-  url: 'https://chakra-ui.com/',
+export const angular = createSkillFactory({
+  name: 'Angular',
+  icon: 'simple-icons:angular',
+  iconColor: '#c5002b',
+  url: 'https://angular.dev/',
 });
 
+export const django = createSkillFactory({
+  name: 'django',
+  icon: 'simple-icons:django',
+  iconColor: '#319795',
+  url: 'https://www.djangoproject.com/'
+});
+
+export const kotlin = createSkillFactory({
+  name: 'kotlin',
+  icon: 'simple-icons:kotlin',
+  iconColor: '#91306b',
+  url: 'https://kotlinlang.org/',
+});
 export const cypress = createSkillFactory({
   name: 'Cypress',
   icon: 'simple-icons:cypress',

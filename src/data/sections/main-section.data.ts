@@ -10,30 +10,29 @@ const mainSectionData = {
     visible: true,
   },
   image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  fullName: 'Crísthian Agámez',
+  role: 'Senior Frontend Developer and Backend',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Phone', value: '3045989898', url: 'tel:3045989898' },
+    { label: 'Email', value: 'cristhian_agamez@outlook.com', url: 'mailto:cristhian_agamez@outlook.com' },
+    { label: 'From', value: 'Barranquilla, Colombia' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-    { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-    { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Phone', value: '3045989898' },
+    { label: 'Email', value: 'cristhian_agamez@outlook.com' },
+    { label: 'LinkedIn', value: '/in/cristhianac', url: 'https://linkedin.com' },
+    { label: 'GitHub', value: '/cristhianac', url: 'https://github.com' },
+    
   ],
   description:
-    'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
-  tags: [{ name: 'Open for freelance' }, { name: 'Available for mentoring' }, { name: 'Working on side project' }],
+    'I am a developer with expertise in frontend and backend development, specializing in creating video games and applications. Passionate about software development, I started programming at the age of 7. I have served as a software architect for companies like Krea and Solventech, and I am currently the CEO of UnderCodes and CTO of Olympus Analytics.',
+  tags: [{ name: 'Open for freelance' }, { name: 'UnderCodes, CEO' }, { name: 'Olympus Analytics, CTO' }],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-CristhianAgamez.pdf',
   },
-  links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
+  links: [ github({ url: 'https://github.com/cristhianac' }), linkedin({ url: 'https://linkedin.com/in/cristhianac' })],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;

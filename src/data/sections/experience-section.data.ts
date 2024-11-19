@@ -2,7 +2,6 @@ import type { ExperienceSection } from '@/types/sections/experience-section.type
 import type { ReadonlyDeep } from 'type-fest';
 import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
-  chakraUi,
   eslint,
   firebase,
   nextJs,
@@ -55,7 +54,7 @@ const experienceSectionData = {
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
+        tags: [react(), reactQuery(), eslint()],
       },
       links: [website({ url: '#' }), instagram({ url: '#' })],
     },
