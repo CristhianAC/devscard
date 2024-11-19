@@ -9,8 +9,8 @@ const mainSectionData = {
     slug: 'profile',
     visible: true,
   },
-  image: import('@/assets/my-image.jpeg'),
-  fullName: 'Crísthian Agámez',
+  image: import('@/assets/YO.png'),
+  fullName: 'Cristhian Agamez',
   role: 'Senior Frontend Developer and Backend',
   details: [
     { label: 'Phone', value: '3045989898', url: 'tel:3045989898' },
@@ -28,9 +28,9 @@ const mainSectionData = {
     'I am a developer with expertise in frontend and backend development, specializing in creating video games and applications. Passionate about software development, I started programming at the age of 7. I have served as a software architect for companies like Krea and Solventech, and I am currently the CEO of UnderCodes and CTO of Olympus Analytics.',
   tags: [{ name: 'Open for freelance' }, { name: 'UnderCodes, CEO' }, { name: 'Olympus Analytics, CTO' }],
   action: {
-    label: 'Download CV',
-    url: '/cv.pdf',
-    downloadedFileName: 'CV-CristhianAgamez.pdf',
+    label: 'See my linkedin',
+    url: 'https://www.linkedin.com/in/cristhianac/',
+    downloadedFileName: '',
   },
   links: [ github({ url: 'https://github.com/cristhianac' }), linkedin({ url: 'https://linkedin.com/in/cristhianac' })],
 } as const satisfies ReadonlyDeep<MainSection>;

@@ -1,6 +1,7 @@
 import type { PortfolioSection } from '@/types/sections/portfolio-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import { demo, github, mockups, website } from '../helpers/links';
+import { angular, astro, django, typescript } from '../helpers/skills';
 import {
   eslint,
   firebase,
@@ -30,97 +31,76 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'npx-gaia-gis',
+      
+      dates: [new Date('2024-11'), null],
       details: [
         { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
+        { label: 'My role', value: ['Front-end Developer'] },
+        { label: 'Company', value: 'Olympus Analytics' },
         { label: 'Category', value: ['Web app', 'Open source'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
-      ],
-      screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
-      ],
+      
       description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+        'The Collision Visualization project is a web application designed to visualize collision data, raster images, and other geospatial information in Colombia. Users can view points representing collision locations, tree distributions, and city temperature data on an interactive map. The application provides advanced tools for data manipulation and visualization, enabling users to gain insights into spatial patterns and trends.',
       tagsList: {
         title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [angular(), eslint(), prettier(), typescript()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [demo({ url: 'https://www.npmjs.com/package/ngx-gaia-gis' })],
     },
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
-      dates: [new Date('2019-06'), new Date('2020-02')],
+      name: 'Student Management System',
+   
+      dates: [new Date('2024-09'), null],
       details: [
-        { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
-        { label: 'Company', value: 'Facebook' },
-        { label: 'Category', value: ['Web app', 'Mobile app'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
+        { label: 'Team size', value: '8 people' },
+        { label: 'My role', value: [ 'Designer'] },
+        { label: 'Company', value: 'Universidad del Norte' },
+        { label: 'Category', value: ['Web app'] },
       ],
       description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
+        'The Institutional Resume project is a data analytics dashboard designed for decision-making by executives at Universidad del Norte. It provides comprehensive insights and visualizations of institutional data, enabling informed decisions based on real-time analytics. The dashboard is built to be user-friendly and highly interactive, offering various tools for data manipulation and visualization.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
+        tags: [angular(), typescript()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [],
     },
     {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
+      name: 'Escala',
+      dates: [new Date('2024-09'), new Date('2024-11')],
       details: [
-        { label: 'Team size', value: '3 people' },
+        { label: 'Team size', value: '2 people' },
+        { label: 'My role', value: ['Software Architect','Front-end Developer', 'Designer'] },
+        { label: 'Company', value: 'Olympus Analytics' },
+        { label: 'Category', value: ['Web app'] },
+      ],
+      description:
+        'The Escala Visualization project is a web application designed to visualize collision data, raster images, and other geospatial information in Colombia. Users can view points representing collision locations, tree distributions, and city temperature data on an interactive map. The application provides advanced tools for data manipulation and visualization, enabling users to gain insights into spatial patterns and trends.',
+      tagsList: { 
+        title: 'Technologies',
+        tags: [angular(), tailwindCss(), django(), typescript()],
+      },
+      links: [],
+    },
+    {
+      name: 'UnderCodes Web',
+      image: import('@/assets/portfolio/MockupLogo.jpg'),
+      dates: [new Date('2024-01'), new Date('2024-03')],
+      details: [
+        { label: 'Team size', value: '1 people' },
         { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
+        { label: 'Company', value: 'UnderCodes' },
+        { label: 'Category', value: ['Web app'] },
       ],
       description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
+        'UnderCodes Web is the landing page for UnderCodes, designed to showcase the company’s services and portfolio. It provides an overview of the company’s expertise in web development and design, highlighting key projects and client testimonials. The landing page is built with modern web technologies to ensure a responsive and engaging user experience.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), typescript(), nx(), pnpm()],
+        tags: [astro(), tailwindCss(), typescript()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
-    },
-    {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
-      details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
-      ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
-      ],
-      description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
-      tagsList: {
-        title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
-      },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
+      links: [demo({ url: 'http://www.undercodes.net' })],
     },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;
