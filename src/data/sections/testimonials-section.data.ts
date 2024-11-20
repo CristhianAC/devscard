@@ -13,7 +13,7 @@ const testimonialsSectionData = {
     {
       image: import('@/assets/testimonials/Gustavo.jpg'),
       author: 'Gustavo De La Vega',
-      relation: 'He are helping UnderCodes with the growing up of the enterprice',
+      relation: 'He is helping UnderCodes with the growing up of the enterprice',
       content:"",
       links: [linkedin({ url: 'https://www.linkedin.com/in/gustavodelavega/' })],
     },
