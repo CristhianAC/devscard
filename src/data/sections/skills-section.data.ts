@@ -6,7 +6,11 @@ import {
   tailwindCss,
   typescript,
   angular,
-  django
+  django,
+  Java,
+  Python,
+  PHP,
+  Cora
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -38,8 +42,11 @@ const skillsSectionData = {
         }),
         postgreSql({ level: 4 }),
         kotlin({ level: 3 }),
-        astro({ level: 3 }),
-
+        astro({ level: 4 }),
+        Java({ level: 4 }),
+        Python({ level: 5 }),
+        PHP({ level: 4 }),
+        Cora({ level: 2 }),
       ],
     },
     {

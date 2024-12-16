@@ -25,6 +25,35 @@ export const apolloGraphql = createSkillFactory({
   url: 'https://www.apollographql.com/',
 });
 
+export const Java = createSkillFactory({
+  name: 'Java',
+  icon: 'simple-icons:java',
+  iconColor: '#311C87',
+  url: 'https://www.apollographql.com/',
+});
+
+export const Python = createSkillFactory({
+  name: 'Python',
+  icon: 'simple-icons:python',
+  iconColor: '#3776AB',
+  url: 'https://www.apollographql.com/',
+});
+
+export const Cora = createSkillFactory({
+  name: 'cora',
+  icon: 'simple-icons:cora',
+  iconColor: '#E61845',
+  url: 'https://www.apollographql.com/',
+});
+
+
+export const PHP = createSkillFactory({
+  name: 'PHP',
+  icon: 'simple-icons:php',
+  iconColor: '#777BB4',
+  url: 'https://www.apollographql.com/',
+});
+
 export const astro = createSkillFactory({
   name: 'Astro',
   icon: 'simple-icons:astro',
