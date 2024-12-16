@@ -29,29 +29,29 @@ export const Java = createSkillFactory({
   name: 'Java',
   icon: 'simple-icons:java',
   iconColor: '#311C87',
-  url: 'https://www.apollographql.com/',
+  url: 'https://www.java.com/es/',
 });
 
 export const Python = createSkillFactory({
   name: 'Python',
   icon: 'simple-icons:python',
   iconColor: '#3776AB',
-  url: 'https://www.apollographql.com/',
+  url: 'https://www.python.org/',
 });
 
 export const Cora = createSkillFactory({
   name: 'cora',
   icon: 'simple-icons:cora',
   iconColor: '#E61845',
-  url: 'https://www.apollographql.com/',
+  url: 'https://joebubna.github.io/Cora/',
 });
 
 
 export const PHP = createSkillFactory({
-  name: 'PHP',
+  name: 'php',
   icon: 'simple-icons:php',
   iconColor: '#777BB4',
-  url: 'https://www.apollographql.com/',
+  url: 'https://www.php.net/',
 });
 
 export const astro = createSkillFactory({
